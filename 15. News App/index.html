@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" onclick="reload()" class="company-logo">
+        <img src="./assets/global.jpg" alt="company-logo" />
+      </a>
+
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"><a href="#">Sports</a></li>
+          <li class="hover-link nav-item" id="weather" onclick="onNavItemClick('weather')"><a href="#">Weather</a></li>
+          <li class="hover-link nav-item" id="stock_market" onclick="onNavItemClick('stock market')"><a href="#">Stock Market</a></li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><a href="#">Politics</a></li>
+        </ul>
+      </div>
+
+      <div class="search-bar flex">
+        <input type="text" id="search-text" class="news-input" placeholder="e.g. Science" />
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="cards-container container flex" id="cards-container"></div>
+  </main>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img id="news-img" src="https://via.placeholder.com/400x200?text=No+Image" alt="card-image" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">This is a title</h3>
+        <h6 class="news-source" id="news-source">Source — Date</h6>
+        <p class="news-desc" id="news-desc">
+          Description goes here.
+        </p>
+      </div>
+    </div>
+  </template>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
