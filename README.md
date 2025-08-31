@@ -43,3 +43,5 @@ Add light/dark theme toggle
 
 
 Open index.html in a browser to run the app.
+
+Here is my website: https://globalnewsapp20.netlify.app/
